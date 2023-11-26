@@ -61,7 +61,7 @@ struct Index {
                 () => {
                     router.pushUrl(
                         {
-                            url: "pages/CommunicateBetweenPageAndUiAbility1",
+                            url: "pages/PageAndUiAbilityCommunicate1",
                         }
                     )
                 }

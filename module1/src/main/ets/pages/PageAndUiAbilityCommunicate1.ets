@@ -5,9 +5,9 @@ let storage = LocalStorage.GetShared()
 
 @Entry(storage)
 @Component
-struct CommunicateBetweenPageAndUiAbility1 {
+struct PageAndUiAbilityCommunicate1 {
     private context = getContext(this) as common.UIAbilityContext
-    @LocalStorageProp("CommunicateBetweenPageAndUiAbility1_key")
+    @LocalStorageProp("PageAndUiAbilityCommunicate1_key")
     private message: string = ""
 
     build() {
@@ -34,7 +34,7 @@ struct CommunicateBetweenPageAndUiAbility1 {
                                     .context
                                     .eventHub
                                     .emit(
-                                        "CommunicateBetweenPageAndUiAbility1",
+                                        "PageAndUiAbilityCommunicate1",
                                         `Hello, I am from PageAbility, CurrentTime: ${new Date().toLocaleString()}`,
                                     )
                             }

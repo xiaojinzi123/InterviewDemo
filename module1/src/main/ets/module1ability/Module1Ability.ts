@@ -4,7 +4,7 @@ import window from '@ohos.window';
 
 let localStorage: LocalStorage = new LocalStorage(
   {
-    "CommunicateBetweenPageAndUiAbility1_key": "",
+    "PageAndUiAbilityCommunicate1_key": "",
   }
 );
 
@@ -12,11 +12,11 @@ export default class Module1Ability extends UIAbility {
 
   onCreate(want, launchParam) {
     this.context.eventHub.on(
-      "CommunicateBetweenPageAndUiAbility1",
+      "PageAndUiAbilityCommunicate1",
       (data1) => {
 
         localStorage.setOrCreate(
-          "CommunicateBetweenPageAndUiAbility1_key",
+          "PageAndUiAbilityCommunicate1_key",
           `${data1}, this is from UiAbility`,
         )
 
@@ -26,7 +26,7 @@ export default class Module1Ability extends UIAbility {
 
   onDestroy() {
     this.context.eventHub.off(
-      "CommunicateBetweenPageAndUiAbility1",
+      "PageAndUiAbilityCommunicate1",
     )
   }
 

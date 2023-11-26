@@ -2,6 +2,6 @@
   "src": [
     "pages/Index1",
     "pages/UiAbilityGetFromPage",
-    "pages/CommunicateBetweenPageAndUiAbility1"
+    "pages/PageAndUiAbilityCommunicate1"
   ]
 }
