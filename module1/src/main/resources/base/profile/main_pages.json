@@ -2,6 +2,7 @@
   "src": [
     "pages/Index1",
     "pages/UiAbilityGetFromPage",
-    "pages/PageAndUiAbilityCommunicate1"
+    "pages/PageAndUiAbilityCommunicate1",
+    "pages/PageCommunicate1"
   ]
 }

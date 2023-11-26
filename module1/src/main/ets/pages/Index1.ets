@@ -16,7 +16,6 @@ struct ListItem1 {
         }
         .width("100%")
         .padding(12)
-
     }
 }
 
@@ -46,6 +45,22 @@ struct Index {
                     router.pushUrl(
                         {
                             url: "pages/UiAbilityGetFromPage",
+                        }
+                    )
+                }
+            )
+            ListItem() {
+                ListItem1(
+                    {
+                        name: "Page 内部 LocalStorage 通信1",
+                    }
+                )
+            }
+            .onClick(
+                () => {
+                    router.pushUrl(
+                        {
+                            url: "pages/PageCommunicate1",
                         }
                     )
                 }
