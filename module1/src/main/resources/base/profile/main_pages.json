@@ -1,6 +1,6 @@
 {
   "src": [
-    "pages/Index1",
+    "pages/Index",
     "pages/UiAbilityGetFromPage",
     "pages/PageAndUiAbilityCommunicate1",
     "pages/PageCommunicate1"
