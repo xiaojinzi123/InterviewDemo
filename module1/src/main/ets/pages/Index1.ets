@@ -1,6 +1,5 @@
 import router from '@ohos.router';
 
-
 /**
  * ListItem 的样式
  */
@@ -41,11 +40,28 @@ struct Index {
                         name: "从 Page 中获取 UIAbility 实例",
                     }
                 )
-            }.onClick(
+            }
+            .onClick(
                 () => {
                     router.pushUrl(
                         {
                             url: "pages/UiAbilityGetFromPage",
+                        }
+                    )
+                }
+            )
+            ListItem() {
+                ListItem1(
+                    {
+                        name: "Page 和 UIAbility 通信1",
+                    }
+                )
+            }
+            .onClick(
+                () => {
+                    router.pushUrl(
+                        {
+                            url: "pages/CommunicateBetweenPageAndUiAbility1",
                         }
                     )
                 }
