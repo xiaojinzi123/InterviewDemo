@@ -1,5 +1,6 @@
 {
   "src": [
-    "pages/Index1"
+    "pages/Index1",
+    "pages/UiAbilityGetFromPage"
   ]
 }
